@@ -48,7 +48,9 @@ nav a:hover {
 /* Container */
 .container {
   display: flex;
+  flex-direction: row;
   padding: 2rem 3rem;
+  gap: 20px;
 }
 
 .flex-left {
@@ -68,12 +70,12 @@ nav a:hover {
 }
 
 .article h1 {
-    padding: 0 1rem;
-    color: rgb(93, 93, 241);
+  padding: 0 1rem;
+  color: rgb(93, 93, 241);
 }
 
-.article h4{
-    padding: 0 1rem;
+.article h4 {
+  padding: 0 1rem;
 }
 
 .article p {
@@ -88,7 +90,7 @@ nav a:hover {
 }
 
 .seemore-btn {
-    padding: 0 1rem;
+  padding: 0 1rem;
   color: rgb(89, 89, 240);
   font-weight: bold;
   border: none;
@@ -106,16 +108,16 @@ nav a:hover {
   scroll-padding-bottom: 50px;
 }
 
-
-/* Aside */
+/* ASIDE CSS */
 aside {
   background-color: rgb(235, 227, 213);
-  padding: 2rem 3rem;
-  margin: 1rem 2rem;
+  line-height: 1.7;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
-aside h4 {
-  text-align: center;
+aside h1 {
   padding-bottom: 2rem;
 }
 
@@ -136,6 +138,8 @@ aside .info {
 }
 
 aside .name {
+  font-weight: bold;
+  font-size: 20px;
   font-family: "Times New Roman", Times, serif;
 }
 
@@ -147,7 +151,7 @@ aside .quote {
   padding: 1rem 0;
   font-family: "Courier New", Courier, monospace;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .quote span {
@@ -207,4 +211,41 @@ footer .card:hover {
 
 footer a p {
   padding: 0 1rem;
+}
+
+/* MEDIA QUERY SCREEN */
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 85%;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  aside .creator img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .quote {
+    font-size: 10px;
+  }
+}
+
+/* Smartphone */
+@media (max-width: 640px) {
+  html {
+    font-size: 68%;
+  }
+
+  aside .creator img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .quote {
+    font-size: 10px;
+  }
 }
