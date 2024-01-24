@@ -1,0 +1,46 @@
+/* Clean HTML */
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* HEADER CSS */
+
+/* Logo */
+nav h1{
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* NavBar */
+nav{
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.1rem;
+    background-color: pink;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+}
+
+nav a{
+    display: inline-block;
+    padding: 20px 30px;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover{
+    background-color: red;
+    transition: 0.7s;
+}
+
+
+/* MAIN CSS */
+
+
