@@ -5,14 +5,14 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* HEADER CSS */
 
 /* Logo */
 nav h1 {
-  color: white;
+  /* color: white; */
   font-size: 1.5rem;
 }
 
@@ -28,6 +28,10 @@ nav {
   align-items: center;
 }
 
+nav span {
+  color: white;
+}
+
 nav a {
   display: inline-block;
   padding: 20px 30px;
@@ -36,16 +40,15 @@ nav a {
 }
 
 nav a:hover {
-  background-color: red;
-  transition: 0.7s;
+  background-color: wheat;
+  transition: 0.7s ease-in-out;
 }
 
 /* MAIN CSS */
 /* Container */
 .container {
   display: flex;
-  margin-top: 2rem 5rem;
-  padding-top: 2rem;
+  padding: 2rem 3rem;
 }
 
 .flex-left {
@@ -53,17 +56,39 @@ nav a:hover {
 }
 
 .flex-right {
-  flex: 0 0 25%;
+  flex: 0 0 30%;
 }
 
 /* Article */
 .article {
+  line-height: 1.7;
   background-color: rgb(243, 238, 234);
-  padding: 1rem 3rem;
-  margin: 1rem 2rem;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.article h1 {
+    padding: 0 1rem;
+    color: rgb(93, 93, 241);
+}
+
+.article h4{
+    padding: 0 1rem;
+}
+
+.article p {
+  margin-bottom: 1rem;
+  text-indent: 20px;
+  padding: 0 1rem;
+}
+
+.article img {
+  max-width: 100%;
+  padding: 5rem;
 }
 
 .seemore-btn {
+    padding: 0 1rem;
   color: rgb(89, 89, 240);
   font-weight: bold;
   border: none;
@@ -81,13 +106,6 @@ nav a:hover {
   scroll-padding-bottom: 50px;
 }
 
-.article h1 {
-  padding: 1rem 0;
-}
-
-.article p {
-  padding: 0.4rem 0;
-}
 
 /* Aside */
 aside {
