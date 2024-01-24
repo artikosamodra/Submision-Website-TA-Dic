@@ -1,7 +1,8 @@
 /* Clean HTML */
-*,
+*, html, body,
 ::before,
 ::after {
+  max-width: 100%;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -230,7 +231,7 @@ footer a p {
   }
 
   .quote {
-    font-size: 10px;
+    font-size: 1px;
   }
 }
 
@@ -246,6 +247,6 @@ footer a p {
   }
 
   .quote {
-    font-size: 10px;
+    font-size: 1px;
   }
 }
