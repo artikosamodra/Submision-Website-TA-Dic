@@ -5,81 +5,133 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Verdana, Geneva, Tahoma, sans-serif
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* HEADER CSS */
 
 /* Logo */
-nav h1{
-    color: white;
-    font-size: 1.5rem;
+nav h1 {
+  color: white;
+  font-size: 1.5rem;
 }
 
 /* NavBar */
-nav{
-    padding: 0 5rem;
-    margin:0;
-    font-weight: bold;
-    font-size: 1.1rem;
-    background-color: rgb(176, 166, 149);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
+nav {
+  padding: 0 5rem;
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.1rem;
+  background-color: rgb(176, 166, 149);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-nav a{
-    display: inline-block;
-    padding: 20px 30px;
-    text-decoration: none;
-    color: black;
+nav a {
+  display: inline-block;
+  padding: 20px 30px;
+  text-decoration: none;
+  color: black;
 }
 
-nav a:hover{
-    background-color: red;
-    transition: 0.7s;
+nav a:hover {
+  background-color: red;
+  transition: 0.7s;
 }
-
 
 /* MAIN CSS */
 /* Container */
-.container{
-    display: flex;
-    margin-top: 2rem 5rem;
-    padding-top: 2rem;
+.container {
+  display: flex;
+  margin-top: 2rem 5rem;
+  padding-top: 2rem;
 }
 
 .content {
-    margin: 0;
+  margin: 0;
 }
 
-.flex-left{
-    flex: 0 0 70%;
+.flex-left {
+  flex: 0 0 70%;
 }
 
-.flex-right{
-    flex: 0 0 25%;
+.flex-right {
+  flex: 0 0 25%;
 }
 
 /* Article */
-article{
-    background-color: rgb(243, 238, 234);
-    padding:1rem 3rem;
-    margin: 0 2rem;
+.article {
+  background-color: rgb(243, 238, 234);
+  padding: 1rem 3rem;
+  margin: 1rem 2rem;
 }
 
-article h1{
-    padding: 1rem 0;
+#fullArticle{
+    display: none;
 }
 
-article p{
-    padding: 0.4rem 0;
+#showA{
+    display: block;
+}
+
+#hiddenA{
+    display: none;
+}
+
+.seemore-btn {
+  color: rgb(89, 89, 240);
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.scroll {
+  aspect-ratio: 2/1;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-padding-bottom: 50px;
+}
+
+.article h1 {
+  padding: 1rem 0;
+}
+
+.article p {
+  padding: 0.4rem 0;
 }
 
 /* Aside */
-aside{
-    background-color: rgb(235, 227, 213);
-    padding:1rem 3rem;
-    margin: 0 2rem;
+aside {
+  background-color: rgb(235, 227, 213);
+  padding: 1rem 3rem;
+  margin: 1rem 2rem;
+}
 
+/* Footer CSS */
+footer {
+  background-color: rgb(176, 166, 149);
+  margin-top: 2rem 5rem;
+  padding-top: 2rem;
+}
+
+footer p,
+footer h3 {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.social-media div {
+  padding: 0 2rem;
+}

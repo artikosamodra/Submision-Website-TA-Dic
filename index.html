@@ -23,33 +23,48 @@
     </header>
 
     <main>
-        <div class="container">
-            <div class="content flex-left" id="content">
-              <article>
-                  <h1>Ini Judul Artikel 1</h1>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor deserunt amet magnam, nihil totam tempora maiores ad incidunt quaerat magni officia vitae, esse maxime optio animi laudantium? Beatae, fuga blanditiis.</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repellat ex nesciunt, fugit voluptatem veritatis deleniti magni repudiandae totam sunt?</p>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, praesentium? Cumque fugit necessitatibus, consequuntur velit ea ut nisi possimus beatae officiis saepe minus rerum, qui sapiente esse? Debitis incidunt nostrum non dolore qui quibusdam sapiente necessitatibus eaque nisi? Saepe nam consectetur, repellat rem assumenda quaerat ipsam exercitationem aliquid repudiandae error.</p>
-              </article>
-      
-              <article>
-                  <h1>Ini Judul Artikel 2</h1>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor deserunt amet magnam, nihil totam tempora maiores ad incidunt quaerat magni officia vitae, esse maxime optio animi laudantium? Beatae, fuga blanditiis.</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repellat ex nesciunt, fugit voluptatem veritatis deleniti magni repudiandae totam sunt?</p>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, praesentium? Cumque fugit necessitatibus, consequuntur velit ea ut nisi possimus beatae officiis saepe minus rerum, qui sapiente esse? Debitis incidunt nostrum non dolore qui quibusdam sapiente necessitatibus eaque nisi? Saepe nam consectetur, repellat rem assumenda quaerat ipsam exercitationem aliquid repudiandae error.</p>
-              </article>
+      <div class="container">
+        <div class="content flex-left" id="content">
+          <article class="article">
+            <h1>Ini Judul Artikel 1</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+              deserunt amet magnam, nihil totam tempora maiores ad incidunt
+              quaerat magni officia vitae, esse maxime optio animi laudantium?
+              Beatae, fuga blanditiis.
+            </p>
+
+            <div id="fullArticle">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, a.
+              </p>
             </div>
-      
-            <aside class="flex-right">
-              <img src="" alt="" />
-              <p>INI DAERAH GAMBAR</p>
-            </aside>
+            <button class="seemore-btn" onclick="toggleBtn()">
+              <span id="showA">See More...</span>
+              <span id="hiddenA">Hidden Article</span>
+            </button>
+          </article>
         </div>
+
+        <aside class="flex-right">
+          <img src="" alt="" />
+          <p>INI DAERAH GAMBAR</p>
+        </aside>
+      </div>
     </main>
 
     <footer>
+      <h3>Social Media</h3>
+      <div class="social-media">
+        <div>A</div>
+        <div>A</div>
+        <div>A</div>
+        <div>A</div>
+      </div>
       <div><p>&copy; 2024 || Create by Artiko F Samodra.</p></div>
-      <div>Sosmed Area</div>
     </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="src/script.js"></script>
   </body>
 </html>
