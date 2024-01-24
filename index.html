@@ -24,7 +24,7 @@
 
     <main>
       <div class="container">
-        <div class="content flex-left" id="content">
+        <div class="flex-left" id="content">
           <article class="article">
             <h1>Ini Judul Artikel 1</h1>
             <p>
@@ -34,21 +34,69 @@
               Beatae, fuga blanditiis.
             </p>
 
-            <div id="fullArticle">
+            <div id="fullArticle1" style="display:none">
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, a.
               </p>
             </div>
-            <button class="seemore-btn" onclick="toggleBtn()">
-              <span id="showA">See More...</span>
-              <span id="hiddenA">Hidden Article</span>
+            <button class="seemore-btn" onclick="toggleBtn('fullArticle1', 'hiddenA1', 'showA1')">
+              <span id="showA1">See More...</span>
+              <span id="hiddenA1" style="display:none">Hidden Article</span>
+            </button>
+          </article>
+          <article class="article">
+            <h1>Ini Judul Artikel 1</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+              deserunt amet magnam, nihil totam tempora maiores ad incidunt
+              quaerat magni officia vitae, esse maxime optio animi laudantium?
+              Beatae, fuga blanditiis.
+            </p>
+
+            <div id="fullArticle2" style="display:none">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, a.
+              </p>
+            </div>
+            <button class="seemore-btn" onclick="toggleBtn('fullArticle2', 'hiddenA2', 'showA2')">
+              <span id="showA2">See More...</span>
+              <span id="hiddenA2" style="display:none">Hidden Article</span>
+            </button>
+          </article>
+          <article class="article">
+            <h1>Ini Judul Artikel 1</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+              deserunt amet magnam, nihil totam tempora maiores ad incidunt
+              quaerat magni officia vitae, esse maxime optio animi laudantium?
+              Beatae, fuga blanditiis.
+            </p>
+
+            <div id="fullArticle3" style="display:none">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, a.
+              </p>
+            </div>
+            <button class="seemore-btn" onclick="toggleBtn('fullArticle3', 'hiddenA3', 'showA3')">
+              <span id="showA3">See More...</span>
+              <span id="hiddenA3" style="display:none">Hidden Article</span>
             </button>
           </article>
         </div>
 
         <aside class="flex-right">
-          <img src="" alt="" />
-          <p>INI DAERAH GAMBAR</p>
+            <div class="creator">
+                <div>
+                    <h4>My Profil<h4>
+                    <img src="src/img/picture.jpg" alt="Foto Profil">
+                    <div class="info">
+                        <p class="name">~ Artiko .F Samodra ~</p>
+                        <!-- <p>FE</p> -->
+                        <p class="quote">`Saya bisa melakukan apapun setelah cukup kopi, kecuali mengalahkan <span">Ultraman</span>⚡`</p>
+                        <p>	&#128640; &#128685; &#128187; &#129313; &#128157; &#128010;</p>
+                    </div>
+                </div>
+            </div>
         </aside>
       </div>
     </main>
@@ -56,10 +104,18 @@
     <footer>
       <h3>Social Media</h3>
       <div class="social-media">
-        <div>A</div>
-        <div>A</div>
-        <div>A</div>
-        <div>A</div>
+        <div class="card">
+            <a href=""><img src="src/img/instagram.png" alt="" /><p>Instagram</p></a>
+        </div>
+        <div class="card">
+            <a href=""><img src="src/img/linkedin.png" alt="" /><p>Linkedin</p></a>
+        </div>
+        <div class="card">
+            <a href=""><img src="src/img/github.png" alt="" /><p>Github</p></a>
+        </div>
+        <div class="card">
+            <a href=""><img src="src/img/telegram.png" alt="" /><p>Telegram</p></a>
+        </div>
       </div>
       <div><p>&copy; 2024 || Create by Artiko F Samodra.</p></div>
     </footer>

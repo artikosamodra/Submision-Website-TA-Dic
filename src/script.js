@@ -1,7 +1,7 @@
-function toggleBtn() {
-  let fullArticle = document.getElementById("fullArticle");
-  let hiddenA = document.getElementById("hiddenA");
-  let showA = document.getElementById("showA");
+function toggleBtn(articleId, hiddenId, showId) {
+  let fullArticle = document.getElementById(articleId);
+  let hiddenA = document.getElementById(hiddenId);
+  let showA = document.getElementById(showId);
 
   if (fullArticle.style.display === "none" || fullArticle.style.display === "") {
     fullArticle.style.display = "block";

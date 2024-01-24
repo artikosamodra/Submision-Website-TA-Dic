@@ -48,10 +48,6 @@ nav a:hover {
   padding-top: 2rem;
 }
 
-.content {
-  margin: 0;
-}
-
 .flex-left {
   flex: 0 0 70%;
 }
@@ -65,18 +61,6 @@ nav a:hover {
   background-color: rgb(243, 238, 234);
   padding: 1rem 3rem;
   margin: 1rem 2rem;
-}
-
-#fullArticle{
-    display: none;
-}
-
-#showA{
-    display: block;
-}
-
-#hiddenA{
-    display: none;
 }
 
 .seemore-btn {
@@ -108,8 +92,48 @@ nav a:hover {
 /* Aside */
 aside {
   background-color: rgb(235, 227, 213);
-  padding: 1rem 3rem;
+  padding: 2rem 3rem;
   margin: 1rem 2rem;
+}
+
+aside h4 {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+aside .creator {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+}
+
+aside .creator img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+aside .info {
+  padding-top: 2rem;
+}
+
+aside .name {
+  font-family: "Times New Roman", Times, serif;
+}
+
+aside p {
+  font-family: "Times New Roman", Times, serif;
+}
+
+aside .quote {
+  padding: 1rem 0;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.quote span {
+  font-weight: bold;
 }
 
 /* Footer CSS */
@@ -132,6 +156,37 @@ footer h3 {
   padding: 2rem 0;
 }
 
-.social-media div {
-  padding: 0 2rem;
+footer .card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2rem;
+  background-color: wheat;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+footer img {
+  width: 100px;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .card:hover {
+  background-color: rgb(230, 245, 61);
+  transition: 0.3s linear;
+  transform: scale(1.05);
+}
+
+footer a p {
+  padding: 0 1rem;
 }
