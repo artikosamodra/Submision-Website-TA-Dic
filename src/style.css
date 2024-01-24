@@ -1,5 +1,7 @@
 /* Clean HTML */
-*, html, body,
+*,
+html,
+body,
 ::before,
 ::after {
   max-width: 100%;
@@ -27,6 +29,15 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
+}
+
+nav .navbar-nav {
+  display: flex;
+}
+
+#menu {
+  display: none;
 }
 
 nav span {
@@ -40,10 +51,10 @@ nav a {
   color: black;
 }
 
-nav a:hover {
+/* nav a:hover {
   background-color: wheat;
   transition: 0.7s ease-in-out;
-}
+} */
 
 /* MAIN CSS */
 /* Container */
@@ -174,12 +185,14 @@ footer h3 {
 
 .social-media {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 2rem 0;
+  padding: 2rem;
 }
 
 footer .card {
+  padding: 0 2rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -230,8 +243,43 @@ footer a p {
     height: 100px;
   }
 
+  nav {
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  nav h1 {
+    padding: 2rem 0;
+  }
+
+  nav .navbar-nav {
+    display: none;
+    flex-direction: column;
+  }
+
+  .navbar-nav a {
+    width: 100%;
+  }
+
+  nav .navbar-nav.active {
+    display: flex;
+  }
+
   .quote {
     font-size: 1px;
+  }
+
+  #menu {
+    display: block;
+  }
+
+  .social-media {
+    display: flexbox;
+  }
+  .social-media .card {
+    flex-direction: column;
+    margin: 1rem;
   }
 }
 
@@ -246,7 +294,42 @@ footer a p {
     height: 100px;
   }
 
+  nav {
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  nav h1 {
+    padding: 2rem 0;
+  }
+
+  nav .navbar-nav {
+    display: none;
+    flex-direction: column;
+  }
+
+  .navbar-nav a {
+    width: 100%;
+  }
+
+  nav .navbar-nav.active {
+    display: flex;
+  }
+
   .quote {
     font-size: 1px;
+  }
+
+  #menu {
+    display: block;
+  }
+
+  .social-media {
+    flex-direction: column;
+  }
+  .social-media .card {
+    flex-direction: column;
+    margin: 1rem;
   }
 }
