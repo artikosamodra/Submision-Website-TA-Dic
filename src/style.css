@@ -81,6 +81,13 @@ nav a {
   margin-bottom: 1.5rem;
 }
 
+.heading {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: rgb(176, 166, 149);
+  margin-bottom: 1rem;
+}
+
 .article h1 {
   padding: 0 1rem;
   color: rgb(93, 93, 241);
@@ -98,7 +105,7 @@ nav a {
 
 .article img {
   max-width: 100%;
-  padding: 5rem;
+  padding: 4rem;
 }
 
 .seemore-btn {
@@ -141,8 +148,14 @@ aside .creator {
 
 aside .creator img {
   width: 200px;
-  height: 200px;
+  height: auto;
   border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+aside .creator img:hover {
+  transition: 0.5s linear;
+  transform: scale(1.2);
 }
 
 aside .info {
@@ -178,7 +191,8 @@ footer {
 }
 
 footer p,
-footer h3 {
+footer h1 {
+  font-weight: bold;
   text-align: center;
   padding: 1rem 0;
 }
@@ -274,12 +288,17 @@ footer a p {
     display: block;
   }
 
+  .article img {
+    padding: 2rem;
+  }
+
   .social-media {
-    display: flexbox;
+    flex-direction: column;
   }
   .social-media .card {
     flex-direction: column;
     margin: 1rem;
+    width: 100%;
   }
 }
 
@@ -287,6 +306,10 @@ footer a p {
 @media (max-width: 640px) {
   html {
     font-size: 68%;
+  }
+
+  .container {
+    flex-direction: column;
   }
 
   aside .creator img {
@@ -325,11 +348,16 @@ footer a p {
     display: block;
   }
 
+  .article img {
+    padding: 2rem;
+  }
+
   .social-media {
     flex-direction: column;
   }
   .social-media .card {
     flex-direction: column;
     margin: 1rem;
+    width: 100%;
   }
 }
